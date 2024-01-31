@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 12 11:12:23 IST 2024</td>
+<td>Started on:</td><td>Wed Jan 31 12:43:32 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36276 ms)</td>
+<tr><td>Total time:</td><td>81 seconds (81586 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,65 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Cermati.testRunner.TestNG_TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.Cermati.testRunner.TestNG_TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Accessing Cell Phones & Accessories with Applied Filters", "Verify Product Search Functionality with Multiple Options"</td>
-<td><div><pre>java.lang.AssertionError: Failed to click on element [By.xpath: //a[contains(text(),&apos;Cell phones &amp; accessories&apos;)]]
-	at org.testng.Assert.fail(Assert.java:111)
-	at com.Cermati.commonFactory.CommonSelenium.click(CommonSelenium.java:203)
-	at com.Cermati.pageObjects.ProductSearchandAccessPage.selectingCellPhonesAccessories(ProductSearchandAccessPage.java:139)
-	at com.Cermati.stepDefinitions.ProductAccess_Steps.the_user_selects_from_the_available_options(ProductAccess_Steps.java:29)
-	at ✽.the user selects &quot;Cell phones &amp; accessories&quot; from the available options(file:///home/milind/Downloads/Cermati/src/test/java/com/Cermati/features/ProductAccess.feature:7)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1028908791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1028908791'><pre>java.lang.AssertionError: Failed to click on element [By.xpath: //a[contains(text(),&apos;Cell phones &amp; accessories&apos;)]]
-	at org.testng.Assert.fail(Assert.java:111)
-	at com.Cermati.commonFactory.CommonSelenium.click(CommonSelenium.java:203)
-	at com.Cermati.pageObjects.ProductSearchandAccessPage.selectingCellPhonesAccessories(ProductSearchandAccessPage.java:139)
-	at com.Cermati.stepDefinitions.ProductAccess_Steps.the_user_selects_from_the_available_options(ProductAccess_Steps.java:29)
-	at ✽.the user selects &quot;Cell phones &amp; accessories&quot; from the available options(file:///home/milind/Downloads/Cermati/src/test/java/com/Cermati/features/ProductAccess.feature:7)
+<td title='com.Cermati.testRunner.TestNG_TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.Cermati.testRunner.TestNG_TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Searching for a Product and Verifying the First Result", "Verify Product Search Functionality with Multiple Options"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[id=&apos;item52a3cf93b0&apos;] a[class=&apos;s-item__link&apos;]&quot;}
+  (Session info: chrome=121.0.6167.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-92-generic&apos;, java.version: &apos;11.0.21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ea7ee6d025fa2be74d2932a678290c7, findElement {using=css selector, value=[id=&apos;item52a3cf93b0&apos;] a[class=&apos;s-item__link&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45295}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45295/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ea7ee6d025fa2be74d2932a678290c7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at com.Cermati.pageObjects.ProductSearchandAccessPage.getFirstResultValidation(ProductSearchandAccessPage.java:128)
+	at com.Cermati.stepDefinitions.ProductAccess_Steps.verifies_that_the_name_of_the_first_result_contains(ProductAccess_Steps.java:87)
+	at ✽.verifies that the name of the first result contains &quot;Macbook&quot;(file:///home/milind/git/Cermati-Assignment/src/test/java/com/Cermati/features/ProductAccess.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1646410010", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1646410010'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[id=&apos;item52a3cf93b0&apos;] a[class=&apos;s-item__link&apos;]&quot;}
+  (Session info: chrome=121.0.6167.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-92-generic&apos;, java.version: &apos;11.0.21&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ea7ee6d025fa2be74d2932a678290c7, findElement {using=css selector, value=[id=&apos;item52a3cf93b0&apos;] a[class=&apos;s-item__link&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45295}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45295/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ea7ee6d025fa2be74d2932a678290c7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at com.Cermati.pageObjects.ProductSearchandAccessPage.getFirstResultValidation(ProductSearchandAccessPage.java:128)
+	at com.Cermati.stepDefinitions.ProductAccess_Steps.verifies_that_the_name_of_the_first_result_contains(ProductAccess_Steps.java:87)
+	at ✽.verifies that the name of the first result contains &quot;Macbook&quot;(file:///home/milind/git/Cermati-Assignment/src/test/java/com/Cermati/features/ProductAccess.feature:24)
 </pre></div></td>
-<td>20</td>
-<td>com.Cermati.testRunner.TestNG_TestRunner@7dc0f706</td></tr>
+<td>27</td>
+<td>com.Cermati.testRunner.TestNG_TestRunner@7c9d8e2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -103,10 +145,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Cermati.testRunner.TestNG_TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.Cermati.testRunner.TestNG_TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Searching for a Product and Verifying the First Result", "Verify Product Search Functionality with Multiple Options"</td>
+<td title='com.Cermati.testRunner.TestNG_TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.Cermati.testRunner.TestNG_TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Accessing Cell Phones & Accessories with Applied Filters", "Verify Product Search Functionality with Multiple Options"</td>
 <td></td>
-<td>14</td>
-<td>com.Cermati.testRunner.TestNG_TestRunner@7dc0f706</td></tr>
+<td>53</td>
+<td>com.Cermati.testRunner.TestNG_TestRunner@7c9d8e2</td></tr>
 </table><p>
 </body>
 </html>
