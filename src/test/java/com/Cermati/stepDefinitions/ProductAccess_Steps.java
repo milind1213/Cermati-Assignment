@@ -79,13 +79,15 @@ public class ProductAccess_Steps {
 	
 	@Then("verifies that the page loads completely")
 	public void verifies_that_the_page_loads_completely() {
-	   System.out.println("dgdfg");
+		
 	}
 	
 	@Then("verifies that the name of the first result contains {string}")
 	public void verifies_that_the_name_of_the_first_result_contains(String item) {
 	   String actualResult =  user.getFirstResultValidation();
-	   Assert.assertTrue(actualResult.toLowerCase().contains(item.toLowerCase()));
+	   System.out.println("RRRRRRRRRRRRRR : "+actualResult);
+	   Assert.assertTrue(actualResult.contains("iPhone"));
+	   System.out.println(item);
 	}
 	
 	

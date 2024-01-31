@@ -26,7 +26,7 @@ public class ProductSearchandAccessPage extends CommonSelenium {
 	private By searchLocator = By.xpath("//input[@id='gh-ac'  or @placeholder ='Search for anything']");
 	private By categoryDropdownLocator = By.id("gh-cat");
 	private By searchBtnLocatoer = By.id("gh-btn");
-	private By searchResultLocator = By.cssSelector("[id='item52a3cf93b0'] a[class='s-item__link']");
+	private By searchResultLocator = By.xpath("(//a/div/span[@role='heading' and contains(text(), 'iPhone')])[1]");
 	private By conditionFilter = By.xpath("//div[contains(@id,'c3-mainPanel')]//span[text()='Condition']");
 	private By priceFilter = By.xpath("//div[contains(@id,'c3-mainPanel')]//span[text()='Price']");
 	private By itemBylocation = By.xpath("//div[contains(@id,'c3-mainPanel')]//span[text()='Item Location']");

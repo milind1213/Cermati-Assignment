@@ -24,8 +24,8 @@ Feature: Verify Product Search Functionality with Multiple Options
     And verifies that the name of the first result contains "Macbook"
 
     Examples:
-      | items      | category                        |
-      | Macbook    |  Computers/Tablets & Networking |
+      | items  | category                  |
+      | iPhone | Cell Phones & Accessories |
     
    
    
